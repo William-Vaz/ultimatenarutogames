@@ -1,0 +1,20 @@
+	<script type="text/javascript">
+  var imageURLs = [
+       "imagens/1.jpg"
+     , "imagens/2.jpg"
+     , "imagens/3.jpg"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+  </script>
+  -------aonde a imagem vai↓-----------
+<div align="center">
+<script type="text/javascript">
+  document.write(getImageTag());
+</script>
+</div>
